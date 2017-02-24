@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.tsl.plsqltest</groupId>
-	<artifactId>plsqltest</artifactId>
-	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>PL SQL test project</name>
-	
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.2</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-	<build>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tsl.plsqltest</groupId>
+  <artifactId>plsqltest</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>PL SQL test project</name>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -51,14 +51,10 @@
             </goals>
             <configuration>
               <orderFile>ascending</orderFile>
-              <delimiter>/</delimiter>
-              <delimiterType>row</delimiterType>
-              <onError>continue</onError>
-                <keepFormat>false</keepFormat>
               <fileset>
                 <basedir>src/main/sql</basedir>
                   <includes>
-                    <include>*.sql</include>
+                    <include>**/*.sql</include>
                   </includes>
               </fileset>
             </configuration>
@@ -161,5 +157,5 @@
 
     </plugins>
 
-	</build>
+  </build>
 </project>

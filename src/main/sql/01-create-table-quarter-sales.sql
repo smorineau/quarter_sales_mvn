@@ -4,5 +4,5 @@ Q1_AMOUNT                     NUMBER(6),
 Q2_AMOUNT                     NUMBER(6),
 Q3_AMOUNT                     NUMBER(6),
 Q4_AMOUNT                     NUMBER(6)
-);
+)
 /
