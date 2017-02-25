@@ -83,27 +83,6 @@
           </execution>
 
           <execution>
-            <id>insert-data</id>
-            <phase>process-test-resources</phase>
-            <goals>
-              <goal>execute</goal>
-            </goals>
-            <configuration>
-              <orderFile>ascending</orderFile>
-              <delimiter>;</delimiter>
-              <delimiterType>normal</delimiterType>
-              <onError>continue</onError>
-                <keepFormat>false</keepFormat>
-              <fileset>
-                <basedir>src/main/resources/data</basedir>
-                  <includes>
-                    <include>**/*.sql</include>
-                  </includes>
-              </fileset>
-            </configuration>
-          </execution>
-
-          <execution>
             <id>create-plsql-test-packages</id>
             <phase>process-test-resources</phase>
             <goals>
@@ -141,7 +120,7 @@
 
         <configuration>
           <driver>oracle.jdbc.driver.OracleDriver</driver>
-          <url>jdbc:oracle:thin:@localhost:1521:xe</url>
+          <url>jdbc:oracle:thin:@dockerciora_ora12_1:1521:xe</url>
           <username>system</username>
           <password>oracle</password>
           <!--<packageName>betwnstr</packageName>-->
