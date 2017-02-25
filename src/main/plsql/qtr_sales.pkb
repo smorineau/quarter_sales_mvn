@@ -28,5 +28,3 @@ AS
 
 END qtr_sales;
 /
-
-show err

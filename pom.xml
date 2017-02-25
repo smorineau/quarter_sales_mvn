@@ -51,6 +51,9 @@
             </goals>
             <configuration>
               <orderFile>ascending</orderFile>
+              <delimiter>;</delimiter>
+              <delimiterType>normal</delimiterType>
+              <onError>continue</onError>
               <fileset>
                 <basedir>src/main/sql</basedir>
                   <includes>
