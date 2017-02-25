@@ -97,6 +97,7 @@
                     <include>**/*.pkb</include>
                     <include>**/*.sf</include>
                     <include>**/*.sp</include>
+                    <include>**/*.sql</include>
                   </includes>
               </fileset>
             </configuration>
